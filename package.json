@@ -1,0 +1,9 @@
+﻿{
+  "name": "gkngkc.sfb",
+  "version": "1.0.0",
+  "displayName": "Unity Standalone File Browser",
+  "description": "A simple wrapper for native file dialogs on Windows/Mac/Linux.",
+  "author": {
+    "name": "Gökhan Gökçe"
+  }
+}
