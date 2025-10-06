@@ -1,5 +1,3 @@
-#if UNITY_STANDALONE_OSX
-
 using System;
 using System.Runtime.InteropServices;
 
@@ -40,6 +38,11 @@ namespace SFB {
         [DllImport("StandaloneFileBrowser")]
         private static extern void DialogSaveFilePanelAsync(string title, string directory, string defaultName, string extension, AsyncCallback callback);
 
+        
+        static StandaloneFileBrowserMac() {
+            StandaloneFileBrowser.setHandler(new StandaloneFileBrowserMac());;
+        }
+        
         public string[] OpenFilePanel(string title, string directory, ExtensionFilter[] extensions, bool multiselect) {
             var paths = Marshal.PtrToStringAnsi(DialogOpenFilePanel(
                 title,
@@ -115,5 +118,3 @@ namespace SFB {
         }
     }
 }
-
-#endif

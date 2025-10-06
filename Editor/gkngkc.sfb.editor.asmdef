@@ -1,7 +1,12 @@
 {
-    "name": "gkngkc.SFB",
-    "references": [],
-    "includePlatforms": [],
+    "name": "gkngkc.SFB.Editor",
+    "rootNamespace": "",
+    "references": [
+        "gkngkc.SFB"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

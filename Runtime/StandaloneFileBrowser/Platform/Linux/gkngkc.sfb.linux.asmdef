@@ -1,0 +1,20 @@
+{
+  "name": "gkngkc.SFB.Linux",
+  "references": [
+    "gkngkc.SFB"
+  ],
+  "includePlatforms": [
+    "Editor",
+    "LinuxStandalone64"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "UNITY_STANDALONE_LINUX || UNITY_EDITOR_LINUX"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

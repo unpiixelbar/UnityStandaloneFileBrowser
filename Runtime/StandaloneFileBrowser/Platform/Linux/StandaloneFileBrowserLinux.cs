@@ -31,6 +31,10 @@ namespace SFB {
         [DllImport("StandaloneFileBrowser")]
         private static extern void DialogSaveFilePanelAsync(string title, string directory, string defaultName, string extension, AsyncCallback callback);
 
+        static StandaloneFileBrowserLinux() {
+            StandaloneFileBrowser.setHandler(new StandaloneFileBrowserLinux());;
+        }
+
         public StandaloneFileBrowserLinux()
         {
             DialogInit();

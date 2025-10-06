@@ -5,6 +5,11 @@ using UnityEditor;
 
 namespace SFB {
     public class StandaloneFileBrowserEditor : IStandaloneFileBrowser  {
+        
+        static StandaloneFileBrowserEditor() {
+            StandaloneFileBrowser.SetHandler(new StandaloneFileBrowserEditor());
+        }
+        
         public string[] OpenFilePanel(string title, string directory, ExtensionFilter[] extensions, bool multiselect) {
             string path = "";
 

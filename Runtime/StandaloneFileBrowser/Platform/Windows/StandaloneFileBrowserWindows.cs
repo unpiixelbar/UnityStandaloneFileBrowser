@@ -21,6 +21,10 @@ namespace SFB {
         [DllImport("user32.dll")]
         private static extern IntPtr GetActiveWindow();
 
+        static StandaloneFileBrowserWindows() {
+            StandaloneFileBrowser.SetHandler(new StandaloneFileBrowserWindows());;
+        }
+        
         public string[] OpenFilePanel(string title, string directory, ExtensionFilter[] extensions, bool multiselect) {
             var fd = new VistaOpenFileDialog();
             fd.Title = title;

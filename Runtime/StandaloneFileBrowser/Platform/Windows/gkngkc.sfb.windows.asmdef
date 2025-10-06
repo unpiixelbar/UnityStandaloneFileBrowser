@@ -1,0 +1,26 @@
+{
+    "name": "gkngkc.SFB.Windows",
+    "rootNamespace": "",
+    "references": [
+        "gkngkc.SFB"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "WSA",
+        "WindowsStandalone32",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "System.Windows.Forms.dll",
+        "Ookii.Dialogs.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

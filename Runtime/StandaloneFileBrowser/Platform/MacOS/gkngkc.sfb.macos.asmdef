@@ -1,0 +1,21 @@
+{
+    "name": "gkngkc.SFB.MacOS",
+    "rootNamespace": "",
+    "references": [
+        "gkngkc.SFB"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "macOSStandalone"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_STANDALONE_OSX || UNITY_EDITOR_OSX"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace SFB {
     public struct ExtensionFilter {
@@ -14,17 +15,10 @@ namespace SFB {
     public class StandaloneFileBrowser {
         private static IStandaloneFileBrowser _platformWrapper = null;
 
-        static StandaloneFileBrowser() {
-#if UNITY_STANDALONE_OSX
-            _platformWrapper = new StandaloneFileBrowserMac();
-#elif UNITY_STANDALONE_WIN
-            _platformWrapper = new StandaloneFileBrowserWindows();
-#elif UNITY_STANDALONE_LINUX
-            _platformWrapper = new StandaloneFileBrowserLinux();
-#elif UNITY_EDITOR
-            _platformWrapper = new StandaloneFileBrowserEditor();
-#endif
-        }
+        public static void SetHandler(IStandaloneFileBrowser handler) {
+            Debug.Log("Set StandaloneFileBrowser-Handler");
+            _platformWrapper = handler;
+        } 
 
         /// <summary>
         /// Native open file dialog
